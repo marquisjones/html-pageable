@@ -1040,9 +1040,9 @@ if (!Element.prototype.closest) {
                     window.location.hash = that.pages[that.index].id;
                     that.pages.forEach(function(page, i) {
                         if (i === that.index) {
-                            page.classList.add("pg-active");
+                            page.classList.add("pg-deactive");
                         } else {
-                            page.classList.remove("pg-active");
+                            page.classList.remove("pg-deactive");
                         }
                     }, that);
                     that.slideIndex = that.index;
